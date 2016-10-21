@@ -30,7 +30,7 @@ The actual shape and parts that make up your element object are largely up to yo
 ** In the current version of the plugin it's not setup to allow the standard HTML component to have it's html attributes set.  That will come in a future update.
 
 ### template-factory
-The template-factory component is where you will setup the options and bindings for the templated component.  To use the plugin you can create a view/view-model as below:
+The template-factory component is where you will setup the options and bindings for the templated custom component.  Your Aurelia app already has to be aware of the custom component in some other way.  Either through require statements in your view that is calling the `template-factory` component, using the local `feature` plugin like interface or from some other plugin you've brought in (eg the Kendo UI Bridge). To use the plugin you can create a view/view-model as below:
 
 **In your View:**
 ```
