@@ -96,7 +96,7 @@ export class ViewModel {
 }
 ```
 
-Take a look at the `dyanmic-view` view-model and custom components in the Example folder to see how this could work.  While not in this example, it is entirely possible to make a call to a data source that will bring in a `elements` object based of the currently loaded route.  This would involve using the `aurelia-event-aggregator` plugin and then subscribing to the router's navigation success event and then parsing its response.
+Take a look at the `dynamic-view` view-model and custom components in the Example folder to see how this could work.  While not in this example, it is entirely possible to make a call to a data source that will bring in a `elements` object based off the currently loaded route.  This would involve using the `aurelia-event-aggregator` plugin and then subscribing to the router's navigation success event and then parsing its response.
 
 ** Example of this:
 ```
