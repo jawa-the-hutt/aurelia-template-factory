@@ -6,24 +6,24 @@
 
     <div class="col-lg-2">
         <div repeat.for="el of selectView">
-            <template-automator parent.bind="thisVM"
+            <template-factory parent.bind="thisVM"
                                 element.bind="el"
                                 key-String.bind="keyString"
                                 option-String.bind="optionString"
                                 attributes-Object-String.bind="attributesObjectString"
                                 >
-            </template-automator>
+            </template-factory>
         </div>
     </div>
     <div class="col-lg-8">
         <div repeat.for="el of elements">
-            <template-automator parent.bind="thisVM"
+            <template-factory parent.bind="thisVM"
                                 element.bind="el"
                                 key-String.bind="keyString"
                                 option-String.bind="optionString"
                                 attributes-Object-String.bind="attributesObjectString"
                                 >
-            </template-automator>
+            </template-factory>
         </div>
     </div> 
     <div class="col-lg-2"></div>
