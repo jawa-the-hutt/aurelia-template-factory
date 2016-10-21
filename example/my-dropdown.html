@@ -1,0 +1,10 @@
+<template>
+    <div class="form-group">
+        <label class.bind="schema.formGroupLabelClass">${schema.labelText}</label>
+        <select class.bind="schema.selectClass" value.bind="value" change.delegate="onSelect()">
+            <option repeat.for="option of options"
+                    model.bind="option.value"
+                    >${option.text}</option>
+        </select>   
+    </div>
+</template>

@@ -1,0 +1,8 @@
+<template>
+    <div class="form-group">
+        <label class.bind="schema.inputLabelClass" for.bind="schema.key">${schema.labelText}</label>
+        <div class.bind="schema.inputDivClass">
+            <input type.bind="schema.type" value.bind="value" class.bind="schema.elementClass" name.bind="schema.key" id.bind="schema.key" placeholder.bind="schema.placeholder" />
+        </div>
+    </div>
+</template>

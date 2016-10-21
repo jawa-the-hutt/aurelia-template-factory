@@ -1,0 +1,30 @@
+<template>
+    <require from="./my-input"></require>
+    <require from="./my-radio"></require>
+    <require from="./my-checkbox"></require>
+    <require from="./my-dropdown"></require>
+
+    <div class="col-lg-2">
+        <div repeat.for="el of selectView">
+            <template-automator parent.bind="thisVM"
+                                element.bind="el"
+                                key-String.bind="keyString"
+                                option-String.bind="optionString"
+                                attributes-Object-String.bind="attributesObjectString"
+                                >
+            </template-automator>
+        </div>
+    </div>
+    <div class="col-lg-8">
+        <div repeat.for="el of elements">
+            <template-automator parent.bind="thisVM"
+                                element.bind="el"
+                                key-String.bind="keyString"
+                                option-String.bind="optionString"
+                                attributes-Object-String.bind="attributesObjectString"
+                                >
+            </template-automator>
+        </div>
+    </div> 
+    <div class="col-lg-2"></div>
+</template>

@@ -1,0 +1,13 @@
+<template>
+    <div class="form-group checkbox">
+        <label class.bind="schema.formGroupLabelClass">${schema.labelText}</label>
+        <div class.bind="schema.inputDivClass">
+            <ul class="fieldlist">
+                <li repeat.for="option of options">
+                    <input type="checkbox" model.bind="option.value" id.bind="option.id" class.bind="schema.optionInputClass" checked.bind="value">
+                    <label class.bind="schema.optionLabelClass" for.bind="option.id">${option.text}</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+</template>
