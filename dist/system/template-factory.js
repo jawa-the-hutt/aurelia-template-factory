@@ -136,7 +136,7 @@ System.register(['aurelia-framework'], function (_export, _context) {
                                 }
                             }
 
-                            var binding = 'value[' + (value.length - 1) + '].' + key + valString;
+                            var binding = 'value.' + key + valString;
 
                             for (var attribute in attributes) {
                                 if (attribute == this.optionString) {

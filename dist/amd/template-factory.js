@@ -128,7 +128,7 @@ define(['exports', 'aurelia-framework'], function (exports, _aureliaFramework) {
                         }
                     }
 
-                    var binding = 'value[' + (value.length - 1) + '].' + key + valString;
+                    var binding = 'value.' + key + valString;
 
                     for (var attribute in attributes) {
                         if (attribute == this.optionString) {

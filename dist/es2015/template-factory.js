@@ -105,7 +105,7 @@ export let TemplateFactory = (_dec = inject(ViewCompiler, ViewSlot, Container, V
                     }
                 }
 
-                let binding = 'value[' + (value.length - 1) + '].' + key + valString;
+                let binding = 'value.' + key + valString;
 
                 for (let attribute in attributes) {
                     if (attribute == this.optionString) {
@@ -154,7 +154,6 @@ export let TemplateFactory = (_dec = inject(ViewCompiler, ViewSlot, Container, V
 
         return html;
     }
-
 }, (_descriptor = _applyDecoratedDescriptor(_class2.prototype, 'parent', [bindable], {
     enumerable: true,
     initializer: null

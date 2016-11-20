@@ -1,6 +1,6 @@
 {
   "name": "aurelia-template-factory",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An Aurelia plugin to dynamically create HTML elements from an object",
   "keywords": [
     "aurelia",

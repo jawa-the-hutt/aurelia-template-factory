@@ -71,12 +71,11 @@ export class TemplateFactory {
                 }
 
                 // allows us to bind the value property to an object and then nest as necessary
-                let binding = 'value[' + (value.length - 1) + '].' + key + valString;
+                let binding = 'value.' + key + valString;
 
                 for (let attribute in attributes) {
                     // this essentially works for checkboxes and radio's to change
                     // the option.id for each repeatable item that shows up in the DOM
-                    //if (attribute == 'options') {
                     if (attribute == this.optionString) {
                         let options = [];
                         if (attributes[attribute] != null && attributes[attribute] != 'undefined' && attributes[attribute] != '') {
@@ -106,7 +105,6 @@ export class TemplateFactory {
 
                 // this essentially works for checkboxes and radio's to change
                 // the option.id for each repeatable item that shows up in the DOM
-                //if (attribute == 'options') {
                 if (attribute == this.optionString) {
                     let options = [];
                     if (attributes[attribute] != null && attributes[attribute] != 'undefined' && attributes[attribute] != '') {
@@ -123,7 +121,6 @@ export class TemplateFactory {
             }
         }
 
-
         // add the elements html into the string
         html += createdElement.outerHTML;
 
@@ -131,7 +128,5 @@ export class TemplateFactory {
         html += templateEnd;
 
         return html;
-
     }
-
 }

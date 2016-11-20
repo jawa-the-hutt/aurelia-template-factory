@@ -121,7 +121,7 @@ var TemplateFactory = exports.TemplateFactory = (_dec = (0, _aureliaFramework.in
                     }
                 }
 
-                var binding = 'value[' + (value.length - 1) + '].' + key + valString;
+                var binding = 'value.' + key + valString;
 
                 for (var attribute in attributes) {
                     if (attribute == this.optionString) {
